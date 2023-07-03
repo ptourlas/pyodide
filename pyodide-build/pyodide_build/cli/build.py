@@ -3,7 +3,6 @@ import shutil
 import sys
 import tempfile
 from pathlib import Path
-from typing import Optional
 from urllib.parse import urlparse
 
 import requests
@@ -102,7 +101,7 @@ def source(
 
 # simple 'pyodide build' command
 def main(
-    source_location: "Optional[str]" = typer.Argument(
+    source_location: "str | None" = typer.Argument(
         "",
         help="Build source, can be source folder, pypi version specification, or url to a source dist archive or wheel file. If this is blank, it will build the current directory.",
     ),
