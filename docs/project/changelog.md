@@ -19,6 +19,9 @@ myst:
   files for WebAssembly (WASM) compatibility.
   {pr}`4018`
 
+- {{ Enhancement }} Added experimental support for stack switching.
+  {pr}`3957`, {pr}`3964`, {pr}`3987`, {pr}`3990`, {pr}`3210`
+
 - {{ Enhancement }} Add an example for `loadPyodide` and `pyodide.runPython
 {pr}`4012`, {pr}`4011`
 
@@ -51,7 +54,7 @@ myst:
   new array with the result values from the iterable appended.
   {pr}`3904`
 
-- {{ Enhancement }} It is now possible to pass environment variables to
+- {{ Enhancement }} It is now possible two pass environment variables to
   `loadPyodide` via the `env` argument. `homedir` is deprecated in favor of
   `{env: {HOME: whatever_directory}}`.
   {pr}`3870`
